@@ -8,6 +8,13 @@ body {
     overflow-x: hidden;
 }
 
+
+@media screen and (max-width: 640px) {
+    .hiddenInMobile {
+        display: none;
+    }
+}
+
 /* header {
     background-color: var(--secondary-color);
     padding: 1rem 0;
@@ -224,7 +231,7 @@ header {
     /* Dark background from the image */
     /* background-color: rgba(7, 10, 16, 1);  */
     padding: 3rem 10rem 0 10rem;
-    width: 100%;
+    width: auto;
     height: auto;
     position: relative;
 }
@@ -290,6 +297,13 @@ header {
     justify-content: start;
 }
 
+.section1Head {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .sectionMainHeading {
     margin: 0;
     padding: 0 0 0 1rem;
@@ -322,13 +336,11 @@ header {
     width: 60%;
     font-size: 20px;
     font-weight: 400;
-
 }
 
 .sec1part2 {
     width: 33%;
     padding: 1%;
-
 }
 
 .sec1part2title {
@@ -392,6 +404,48 @@ header {
 }
 
 @media screen and (max-width: 640px) {
+
+    .sectionWidth {
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .section1Head {
+        /* display: flex; */
+        align-items: center;
+        text-align: center;
+        /* justify-content: center;
+        flex-direction: column; */
+    }
+
+    .sectionSubHeading {
+        margin: 0;
+        padding: 0 0 0 1rem;
+        font-size: 26px;
+        font-weight: 700;
+        color: #d84520;
+    }
+
+    .sec1part1 {
+        width: 70%;
+    }
+    
+    .sec1part2 {
+        width: 70%;
+    }
+
+    .sec1category {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
     .sec1imgsec {
         flex-direction: column;
     }
@@ -452,7 +506,7 @@ header {
 /* Footer Styles */
 .main-footer {
     /* background-color: #0a1624; */
-    background: linear-gradient(to top,  rgba(12, 16, 28, 1)50%, rgba(26, 43, 64, 1)100%);
+    background: linear-gradient(to top, rgba(12, 16, 28, 1)50%, rgba(26, 43, 64, 1)100%);
 
     /* background: hsla(197, 74%, 43%, 1);
 
