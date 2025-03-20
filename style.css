@@ -291,6 +291,32 @@ header {
     padding: 4rem 0;
 }
 
+.section2{
+    /* background: linear-gradient(to top, rgba(12, 15, 22, 1), rgba(78, 9, 9, 1)), url(assets/sec2bg.png); */
+    /* background-image: url(assets/sec2bg.png); */
+    background: 
+        linear-gradient( to top, rgba(67, 1, 1, 0.888)100%, rgba(12, 15, 22, 0.8)),
+        url(assets/sec2bg.png);
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-blend-mode: overlay; */
+    
+
+    color: white;
+    height: auto;
+    padding: 4rem 0;
+}
+
+.section4{
+    background: 
+        linear-gradient( to top, rgba(2, 32, 67, 0.9)100%, rgba(12, 15, 22, 0.8)),
+        url(assets/sec2bg.png);
+
+    color: white;
+    height: auto;
+    padding: 4rem 0;
+}
+
 .sectionHead1 {
     display: flex;
     align-items: center;
@@ -414,6 +440,10 @@ header {
         gap: 3rem;
     }
 
+    .sectionMainHeading {
+        padding: 0;
+    }
+
     .section1Head {
         /* display: flex; */
         align-items: center;
@@ -424,7 +454,7 @@ header {
 
     .sectionSubHeading {
         margin: 0;
-        padding: 0 0 0 1rem;
+        padding: 0;
         font-size: 26px;
         font-weight: 700;
         color: #d84520;
@@ -777,6 +807,18 @@ header {
     .social-icon {
         width: 30px;
         height: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .navigation-column{
+        display: none;
+    }
+
+    .services-column{
+        display: none;
     }
 }
 
