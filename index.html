@@ -4,292 +4,480 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adways - Marketing & Design Services</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Home - My Website</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
-    <!-- Header Section -->
+    <div class="video-container">
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/Logo.png" alt="Cogent Adways Logo">
-                <div class="navText">
-                    <h1 class="navText1">Cogent</h1>
-                    <h1 class="navText2">Adways</h1>
+        <video autoplay muted loop playsinline id="background-video">
+            <source src="assets/video.mp4" type="video/mp4">
+            <!-- Add fallback formats if needed -->
+        </video>
+        <div class="Home">
+
+            <header>
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="assets/Logo.png" alt="Cogent Adways Logo">
+                        <div class="navText">
+                            <h1 class="navText1">Cogent</h1>
+                            <h1 class="navText2">Adways</h1>
+                        </div>
+                    </div>
+                    <button class="menu-btn" id="menuBtn">☰</button>
+                    <div class="nav-links" id="navLinks">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#testimonials">Testimonials</a>
+                        <a href="#how-we-work">How we work</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#contact">Contact</a>
+                        <!-- <button class="inquiry-btn">Inquiry Now</button> -->
+                    </div>
+                </nav>
+            </header>
+
+            <div class="container">
+                <div class="content">
+                    <h1 class="title">Precision-Driven<br>Marketing <span class="highlight">Design Solutions</span> for
+                        the
+                    </h1>
+                    <h2 class="subtitle">Industrial Sector</h2>
+                    <div class="divider"></div>
+                    <p class="description">We specialize in strategic advertising for manufacturing and industrial
+                        brands
+                    </p>
+                    <p class="services">Catalogs, Brochures, Company Profiles, Websites, Documentaries & much
+                        more...<br>
+                        <span class="highlight2">to
+                            showcase your expertise and drive </span>
+                    </p>
+                    <div class="buttons">
+                        <a href="#portfolio" class="btn btn-outline">View Our Portfolio</a>
+                        <a href="#contact" class="btn btn-outline">Let's Discuss your Project</a>
+                    </div>
                 </div>
             </div>
-            <button class="menu-btn" id="menuBtn">☰</button>
-            <div class="nav-links" id="navLinks">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#how-we-work">How we work</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
-                <!-- <button class="inquiry-btn">Inquiry Now</button> -->
-            </div>
-        </nav>
-    </header>
 
-    <!-- Services Section -->
-    <div class="serviceHeading">
-        <h2 class="ourService">Our Services</h2>
-        <div class="serviceLine"></div>
+        </div>
     </div>
-    <section>
-        <div class="section1">
-            <div class="sectionWidth">
-                <div class="section1Head">
-                    <div class="sectionHead1">
-                        <img class="hiddenInMobile" src="assets/Maskgroup.svg" alt="Plus Icon">
-                        <h1 class="sectionMainHeading">Catalog & Brochure</h1>
-                    </div>
-                    <h3 class="sectionSubHeading" style="margin : 0;">Design & Print</h3>
-                </div>
-                <div class="sec1category">
-                    <div class="sec1part1">
-                        <p>We create compelling catalogs, brochures, and company profiles that speak the language of
-                            your buyers — technical yet engaging. Whether you need print-ready designs or complete
-                            fabrication, we make sure your first impression is impactful.</p>
-                        <div class="sec1imgsec">
-                            <div class="secImg1">
-                                <img src="assets/printingimg1.jpeg" alt="Printing Image">
-                            </div>
-                            <div class="secImg1">
-                                <img src="assets/printingimg2.jpeg" alt="Printing Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec1part2">
-                        <h2 class="sec1part2title">Your Products, Perfectly Presented</h2>
-                        <div>
-                            <div class="sec1part2head">
-                                <h3 class="sec1part2heading">Deliverables</h3>
-                                <img src="assets/arrow.svg" alt="Plus Icon">
-                            </div>
-                            <div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Product Catalog Design</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Brochure Layout</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Company Profile Booklets</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">High-Quality Printing & Binding</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Fabrication Presentation Folders</p>
-                                </div>
 
-                            </div>
+    <!-- About Section  -->
+
+    <div class="about-section">
+        <!-- About section with team members -->
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="about-title"><span style="font-weight: 400;">About </span>Cogent Adways</h2>
+                <div class="about-underline"></div>
+                <h3 class="about-subtitle">Transforming Industrial Brands with Smart Advertising</h3>
+                <p class="about-text">At Cogent Adways, we specialize in marketing solutions for manufacturing and
+                    industrial businesses. Our expertise lies in crafting high-impact marketing tools that showcase your
+                    brand's strength and drive business growth.</p>
+            </div>
+
+            <div class="about-team">
+                <div class="team-member">
+                    <img src="assets/jitinKohli.jpeg" alt="Jitin Kohli" class="team-image">
+                    <div class="imgBottom"></div>
+                    <div class="imgInfo">
+                        <div class="team-des">
+                            <h4 class="team-name">Jitin Kohli</h4>
+                            <p class="team-position">Co Founder</p>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <img src="assets/LinkedIn2.png" alt="LinkedIn" class="custom-icon">
+                            </a>
+                        </div>
+
+                        <!-- <img src="assets/LinkedIn2.png" alt="LinkedIn" class="icon-img"> -->
+
+                        <!-- <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <img src="assets/charuKohli.jpeg" alt="Charu Kohli" class="team-image">
+                    <div class="imgBottom"></div>
+                    <div class="imgInfo">
+                        <div class="team-des">
+                            <h4 class="team-name">Charu Kohli</h4>
+                            <p class="team-position">Co Founder</p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <img src="assets/LinkedIn2.png" alt="LinkedIn" class="custom-icon">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="read-more-btn">Read More</div>
             </div>
         </div>
-    </section>
-<!-- Section 2 -->
-    <section>
-        <div class="section2">
-            <div class="sectionWidth">
-                <div class="section1Head">
-                    <div class="sectionHead1">
-                        <img class="hiddenInMobile" src="assets/Maskgroup.svg" alt="Plus Icon">
-                        <h1 class="sectionMainHeading">Photography</h1>
-                    </div>
-                    <h3 class="sectionSubHeading" style="margin : 0;">Product, Industrial & Corporate</h3>
-                </div>
-                <div class="sec1category">
-                    <div class="sec1part1">
-                        <p>Our photography services bring out the true value of your products, machinery, and workspace. From close-up product shoots to immersive industrial plant photography, we capture what your clients want to see.</p>
-                        <div class="sec1imgsec">
-                            <div class="secImg1">
-                                <img src="assets/printingimg1.jpeg" alt="Printing Image">
-                            </div>
-                            <div class="secImg1">
-                                <img src="assets/printingimg2.jpeg" alt="Printing Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec1part2">
-                        <h2 class="sec1part2title">Show Your Products 
-                            in their Best Light</h2>
-                        <div>
-                            <div class="sec1part2head">
-                                <h3 class="sec1part2heading">Deliverables</h3>
-                                <img src="assets/arrow.svg" alt="Plus Icon">
-                            </div>
-                            <div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Product Photography</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Industrial Photography</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Corporate & Workspace Shoots</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Visual Storyboarding</p>
-                                </div>
+    </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="read-more-btn">Read More</div>
-            </div>
+    <!-- Quote section -->
+    <div class="sec2textarea">
+        <div class="quote-section">
+            <p class="quote-text">" Advertising isn't an Expense;<br>it's an Investment "</p>
+            <p class="quote-subtext">The right marketing tools turn inquiries into <span
+                    class="quote-subtext-span">Long-Term Business Success</span></p>
         </div>
-    </section>
+    </div>
 
-    <!-- Section 3 -->
 
-    <section>
-        <div class="section1">
-            <div class="sectionWidth">
-                <div class="section1Head">
-                    <div class="sectionHead1">
-                        <img class="hiddenInMobile" src="assets/Maskgroup.svg" alt="Plus Icon">
-                        <h1 class="sectionMainHeading">Video Production</h1>
-                    </div>
-                    <h3 class="sectionSubHeading" style="margin : 0;">Product Detailing, Documentaries & Podcasts</h3>
+
+    <!-- What We Do Section -->
+    <section class="wwd-section">
+        <div class="wwd-container">
+            <div class="wwd-header">
+                <h2 class="wwd-title">What We Do</h2>
+                <div class="whatwedosubtext">
+                    <div class="wwd-underline"></div>
+                    <div class="wwd-subtitle">Crafting Powerful Marketing Tools for Maximum Impact</div>
                 </div>
-                <div class="sec1category">
-                    <div class="sec1part1">
-                        <p>We produce dynamic videos and documentaries that help you explain complex products, showcase processes, or share your brand story. Also, create engaging podcast-style content to build trust and authority.</p>
-                        <div class="sec1imgsec">
-                            <div class="secImg1">
-                                <img src="assets/printingimg1.jpeg" alt="Printing Image">
-                            </div>
-                            <div class="secImg1">
-                                <img src="assets/printingimg2.jpeg" alt="Printing Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec1part2">
-                        <h2 class="sec1part2title">Let Your Story Move</h2>
-                        <div>
-                            <div class="sec1part2head">
-                                <h3 class="sec1part2heading">Deliverables</h3>
-                                <img src="assets/arrow.svg" alt="Plus Icon">
-                            </div>
-                            <div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Product Explainer Videos</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Company Documentary Films</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Brand Films</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Podcast/Interview Video Setup</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Fabrication Presentation Folders</p>
-                                </div>
+            </div>
 
+            <div class="wwd-grid">
+                <!-- Item 1: Catalogs/Brochures -->
+                <div class="wwd-item">
+                    <div class="wwd-item-content">
+                        <div class="wwd-item-image" style="background-image: url('assets/Mask group-modified.png')">
+                            <div class="wwd-item-label">
+                                <h3 class="wwd-item-title">Catalogs /Brochures</h3>
+                                <p class="wwd-item-desc">Design, Print & Publication</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="read-more-btn">Read More</div>
+
+                <!-- Item 2: Photography -->
+                <div class="wwd-item">
+                    <div class="wwd-item-content">
+                        <div class="wwd-item-image" style="background-image: url('assets/Mask group2-modified.png');">
+                            <div class="wwd-item-label">
+                                <h3 class="wwd-item-title">Photography</h3>
+                                <p class="wwd-item-desc">Product, Industrial & Corporate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Videos -->
+                <div class="wwd-item">
+                    <div class="wwd-item-content">
+                        <div class="wwd-item-image" style="background-image: url('assets/Mask group3-modified.png');">
+                            <div class="wwd-item-label">
+                                <h3 class="wwd-item-title">Videos</h3>
+                                <p class="wwd-item-desc">Product Detailing, Company Documentaries & Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Website Designing -->
+                <div class="wwd-item">
+                    <div class="wwd-item-content">
+                        <div class="wwd-item-image" style="background-image: url('assets/Mask group4-modified.png');">
+                            <div class="wwd-item-label">
+                                <h3 class="wwd-item-title">Website Designing</h3>
+                                <p class="wwd-item-desc">Static, Dynamic & E-commerce</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Corporate Branding -->
+                <div class="wwd-item">
+                    <div class="wwd-item-content">
+                        <div class="wwd-item-image" style="background-image: url('assets/Mask group5-modified.png');">
+                            <div class="wwd-item-label">
+                                <h3 class="wwd-item-title">Corporate Branding</h3>
+                                <p class="wwd-item-desc">Company Branding, Persona Creating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Exhibition Posters & Canvasses -->
+                <div class="wwd-item">
+                    <div class="wwd-item-content">
+                        <div class="wwd-item-image" style="background-image: url('assets/Mask group6-modified.png');">
+                            <div class="wwd-item-label">
+                                <h3 class="wwd-item-title">Exhibition Posters & Canvasses</h3>
+                                <p class="wwd-item-desc">Posters, Stationery & more...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 4 -->
 
-    <section>
-        <div class="section4">
-            <div class="sectionWidth">
-                <div class="section1Head">
-                    <div class="sectionHead1">
-                        <img class="hiddenInMobile" src="assets/Maskgroup.svg" alt="Plus Icon">
-                        <h1 class="sectionMainHeading">Catalog & Brochure</h1>
-                    </div>
-                    <h3 class="sectionSubHeading" style="margin : 0;">Design & Print</h3>
-                </div>
-                <div class="sec1category">
-                    <div class="sec1part1">
-                        <p>We create compelling catalogs, brochures, and company profiles that speak the language of
-                            your buyers — technical yet engaging. Whether you need print-ready designs or complete
-                            fabrication, we make sure your first impression is impactful.</p>
-                        <div class="sec1imgsec">
-                            <div class="secImg1">
-                                <img src="assets/printingimg1.jpeg" alt="Printing Image">
-                            </div>
-                            <div class="secImg1">
-                                <img src="assets/printingimg2.jpeg" alt="Printing Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec1part2">
-                        <h2 class="sec1part2title">Your Products, Perfectly Presented</h2>
-                        <div>
-                            <div class="sec1part2head">
-                                <h3 class="sec1part2heading">Deliverables</h3>
-                                <img src="assets/arrow.svg" alt="Plus Icon">
-                            </div>
-                            <div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Product Catalog Design</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Brochure Layout</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Company Profile Booklets</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">High-Quality Printing & Binding</p>
-                                </div>
-                                <div class="rightPartPoints">
-                                    <img src="assets/plusSignBlue.svg" alt="Plus Sign">
-                                    <p class="rightPartText">Fabrication Presentation Folders</p>
-                                </div>
+    <!-- Unique Needs of Industrial Design Section -->
+    <section class="uni-needs-section">
+        <div class="uni-needs-container">
+            <h2 class="uni-needs-title">Unique Needs <span class="uni-needs-highlight">of</span> Industrial Design</h2>
+            <div class="uni-needs-underline"></div>
 
-                            </div>
-                        </div>
+            <!-- Three Points Section -->
+            <div class="uni-needs-points">
+                <div class="uni-needs-point">
+                    <div class="uni-needs-number">01</div>
+                    <div class="uni-needs-content">
+                        <h3 class="uni-needs-point-title">Technical Approach</h3>
+                        <p class="uni-needs-description">
+                            Unlike B2B/C or fashion advertising, industrial marketing requires a detailed, technically
+                            accurate driven creative approach. We understand buyers in this sector look for
+                            specifications, efficiency, and ROI rather than emotional appeal. Our designs convey
+                            clarity, precision, and value to specific industry decision makers.
+                        </p>
                     </div>
                 </div>
-                <div class="read-more-btn">Read More</div>
+
+                <div class="uni-needs-point">
+                    <div class="uni-needs-number">02</div>
+                    <div class="uni-needs-content">
+                        <h3 class="uni-needs-point-title">Functionality with Aesthetics</h3>
+                        <p class="uni-needs-description">
+                            While aesthetics are important, most industrial advertising prioritizes functionality and
+                            practicality. The challenge is to present complex processes, machinery, and technical
+                            advantages in a visually elegant yet straightforward manner. We create designs that make
+                            technical content digestible without sacrificing expertise.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="uni-needs-point">
+                    <div class="uni-needs-number">03</div>
+                    <div class="uni-needs-content">
+                        <h3 class="uni-needs-point-title">B2B-Centric Storytelling</h3>
+                        <p class="uni-needs-description">
+                            Industrial buyers are professionals seeking long-term partnerships, not one-time consumers.
+                            Our B2B-centric approach to advertising, which thrives on aspirational framing. The right
+                            industrial advertising rises beyond product features to craft compelling brochures, catalogs
+                            & videos that position your brand as a reliable industry leader.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Section -->
+            <div class="uni-needs-carousel-container">
+                <div class="uni-needs-carousel">
+                    <div class="uni-needs-carousel-inner">
+                        <div class="uni-needs-carousel-item">
+                            <img src="assets/1.jpeg" alt="Brochure 1" class="uni-needs-carousel-img">
+                        </div>
+                        <div class="uni-needs-carousel-item">
+                            <img src="assets/2.jpeg" alt="Brochure 2" class="uni-needs-carousel-img">
+                        </div>
+                        <div class="uni-needs-carousel-item">
+                            <img src="assets/3.jpeg" alt="Brochure 3" class="uni-needs-carousel-img">
+                        </div>
+                        <div class="uni-needs-carousel-item">
+                            <img src="assets/4.jpeg" alt="Brochure 4" class="uni-needs-carousel-img">
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button class="uni-needs-carousel-control uni-needs-prev"><img src="assets/arrowCrousal.png"
+                            alt="Go left" class="uni-needs-prev-left">
+                        <button class="uni-needs-carousel-control uni-needs-next"><img src="assets/arrowCrousal.png"
+                                alt="Go right" class="uni-needs-prev-right"></button>
+                </div>
+
+                <!-- View More Button -->
+                <div class="uni-needs-view-more-container">
+                    <a href="#" class="uni-needs-view-more">View More</a>
+                </div>
+            </div>
+
+            <!-- Bottom Quote -->
+        </div>
+        <div class="uni2">
+            <div class="uni-needs-quote">
+                A well-crafted brochure, catalog, or video isn't just content,<br>
+                it's a silent salesperson working for you 24/7."
             </div>
         </div>
+    </section>
+
+
+    <!-- Client Testimonials Section -->
+    <section class="client-test-section">
+        <div class="client-test-container">
+            <h2 class="client-test-title">What our clients say about <span class="client-test-highlight">us</span></h2>
+            <div class="client-test-underline"></div>
+
+            <div class="client-test-slider">
+                <!-- Navigation Arrows -->
+                <button class="client-test-nav client-test-prev" aria-label="Previous testimonial"><img
+                        src="assets/arrowCrousal.png" alt="" class="uni-needs-prev-left"></button>
+                <button class="client-test-nav client-test-next" aria-label="Next testimonial"><img
+                        src="assets/arrowCrousal.png" alt="" class="uni-needs-prev-right"></button>
+
+                <!-- Testimonial Card -->
+                <div class="client-test-card">
+                    <div class="client-test-content">
+                        <!-- Client Image -->
+                        <div class="clientsay">
+                            <div class="client-test-img-container">
+                                <img src="assets/sumitSaini.jpeg" alt="Sumit Saini" class="client-test-img">
+                            </div>
+
+                            <div class="client-test-card-inner">
+                                <!-- Testimonial Text -->
+                                <div class="client-test-text-col">
+                                    <p class="client-test-quote">
+                                        "Cogent Adways transformed our marketing with professional catalogs and
+                                        brochures
+                                        that perfectly showcase our process control instruments. Their industry
+                                        expertise
+                                        and attention to detail helped us communicate our technical strengths
+                                        effectively,
+                                        leading to increased client engagement. Highly recommended!"
+                                    </p>
+                                    <div class="client-test-author">
+                                        <h3 class="client-test-name">Sumit Saini</h3>
+                                        <p class="client-test-position">Managing Director, Flowstar Engineering Pvt.
+                                            Ltd.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video Column -->
+                        <div class="client-test-video-col">
+                            <div class="client-test-video-wrapper">
+                                <img src="assets/capture1.jpeg" alt="Testimonial Video"
+                                    class="client-test-video-placeholder">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="client-test-view-more-container">
+            <a href="#" class="client-test-view-more">View More</a>
+        </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="cogent-qa-container">
+            <h2 class="cogent-qa-heading">Got Questions? We've Got Answers!"</h2>
+
+            <p class="cogent-qa-intro">
+                <span class="cogent-qa-intro-watch">Watch</span>
+                <span class="cogent-qa-intro-name">Jitin Kohli</span>
+                <span class="cogent-qa-intro-highlight">break down everything you need to know about</span>
+                Industrial Advertising
+                <br>
+                <span class="cogent-qa-intro-highlight">& how we can help—no matter where you are!</span>
+            </p>
+
+            <div class="cogent-qa-videos">
+                <div class="cogent-qa-video-card">
+                    <div class="cogent-qa-question">
+                        Q- How can Cogent Adways help my industrial business grow?
+                    </div>
+                    <div class="cogent-qa-video-thumbnail">
+                        <img class="cogent-qa-video-image" src="assets/reel1.jpeg"
+                            alt="Jitin Kohli discussing business growth" />
+                        <div class="cogent-qa-play-button">
+                            <div class="cogent-qa-play-icon"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cogent-qa-video-card">
+                    <div class="cogent-qa-question">
+                        Q- How can Cogent Adways help my industrial business grow?
+                    </div>
+                    <div class="cogent-qa-video-thumbnail">
+                        <img class="cogent-qa-video-image" src="assets/reel1.jpeg"
+                            alt="Jitin Kohli discussing business growth" />
+                        <div class="cogent-qa-play-button">
+                            <div class="cogent-qa-play-icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="client-test-view-more">View More</a>
+        </div>
+    </section>
+
+    <section class="form-container">
+        <div class="contact-form-container">
+            <h2 class="contact-form-heading">Still have questions? Fill out the form, and let's discuss your needs.</h2>
+
+            <div class="contact-form-content">
+                <div class="contact-form-fields">
+                    <div class="contact-form-field">
+                        <input type="text" id="contact-name" class="contact-input" placeholder=" ">
+                        <label for="contact-name" class="contact-label">Name</label>
+                    </div>
+
+                    <div class="contact-form-field">
+                        <input type="email" id="contact-email" class="contact-input" placeholder=" ">
+                        <label for="contact-email" class="contact-label">E-mail</label>
+                    </div>
+
+                    <div class="contact-form-field">
+                        <input type="tel" id="contact-phone" class="contact-input" placeholder=" ">
+                        <label for="contact-phone" class="contact-label">Contact No.</label>
+                    </div>
+
+                    <div class="contact-form-field">
+                        <input type="text" id="contact-company" class="contact-input" placeholder=" ">
+                        <label for="contact-company" class="contact-label">Company</label>
+                    </div>
+
+                    <div class="contact-form-field">
+                        <input type="text" id="contact-location" class="contact-input" placeholder=" ">
+                        <label for="contact-location" class="contact-label">Country/City</label>
+                    </div>
+                </div>
+
+                <div class="contact-form-message">
+                    <div>
+                        <label for="contact-message" class="msglabel">Message</label>
+                    </div>
+                    <div class=" contact-form-field-message">
+                        <textarea id="contact-message" class="contact-textarea" placeholder=" "></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <footer class="main-footer">
@@ -413,7 +601,7 @@
     </footer>
 
     <script src="script.js"></script>
-    <!-- <script src="https://kit.fontawesome.com/d95d49dbd3.js" crossorigin="anonymous"></script> -->
+
 </body>
 
 </html>
