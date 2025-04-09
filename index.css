@@ -1105,15 +1105,29 @@ header {
   /* max-width: 1200px; */
   margin: 0 2rem;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* Title Section */
 .client-test-title {
   font-family: "Oswald", sans-serif;
-  text-align: center;
+  /* text-align: center; */
   font-size: 3rem;
   margin: 0;
   font-weight: 400;
+  padding: 0 0 4rem 0;
+}
+
+.client-test-title::after{
+  content: '';
+  display: block;
+  width: 110px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #FF5722;
 }
 
 .client-test-highlight {
@@ -1478,12 +1492,18 @@ header {
   color: #FF5722;
 }
 
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .cogent-qa-videos {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  transition: transform 0.5s ease;
   gap: 20px;
-  padding: 2rem 0;
+  padding: 2rem 40px;
   margin-bottom: 20px;
 }
 
@@ -1492,7 +1512,7 @@ header {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  /* background-color: #000; */
+  flex-shrink: 0;
   position: relative;
   text-align: center;
 }
@@ -1508,8 +1528,6 @@ header {
   position: relative;
   width: 60%;
   height: 70%;
-  /* border-radius: 8px; */
-  /* overflow: hidden; */
 }
 
 .cogent-qa-video-image {
@@ -1539,6 +1557,57 @@ header {
   border-left: 14px solid white;
   border-bottom: 8px solid transparent;
   margin-left: 3px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 87, 34, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 87, 34, 1);
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #FF5722;
 }
 
 .cogent-qa-caption {
@@ -1642,6 +1711,10 @@ header {
   font-family: Arial, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .contact-form-heading {
@@ -1660,28 +1733,29 @@ header {
   height: 5px;
   background-color: rgba(239, 89, 35, 1);
   border-radius: 5px;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+  /* position: absolute;
+  bottom: -10px; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
 }
 
 .contact-form-content {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  gap: 2rem;
+  /* max-width: 1000px; */
+  margin: 0 0;
 }
 
 .contact-form-fields {
   flex: 1;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 
 .contact-form-message {
   flex: 1;
+  width: 500px;
   min-width: 300px;
   display: flex;
   flex-direction: column;
@@ -1689,7 +1763,7 @@ header {
 
 .contact-form-field {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .contact-input,
@@ -1831,6 +1905,7 @@ header {
 
 .branding-column {
   flex: 0 0 25%;
+  line-height: 18px;
 }
 
 .navigation-column {
@@ -2004,13 +2079,15 @@ header {
   /* font-family: Open Sans; */
   font-weight: 400;
   font-size: 15px;
-  line-height: 28px;
+  line-height: 18px;
   letter-spacing: 10%;
 
 }
 
 .orange-text {
   color: #FF5722;
+  font-size: 13px;
+  font-weight: 200;
 }
 
 /* Social Media Icons */
@@ -2022,7 +2099,7 @@ header {
   /* margin: 20px 0; */
 }
 
-.social-icon {
+.social-icon2 {
   
   display: inline-flex;
   align-items: center;
@@ -2035,14 +2112,14 @@ header {
   overflow: hidden;
 }
 
-.social-icon:hover {
+.social-icon2:hover {
   transform: scale(1.1);
 }
 
-.custom-icon {
+.custom-icon2 {
   /* color: #d84520; */
   width: 60%;
-  height: 60%;
+  height: 65%;
   object-fit: contain;
   display: block;
 }

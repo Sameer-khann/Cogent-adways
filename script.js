@@ -145,3 +145,65 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.querySelector('.cogent-qa-videos');
+  const cards = document.querySelectorAll('.cogent-qa-video-card');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+  const dots = document.querySelectorAll('.dot');
+  
+  let currentIndex = 0;
+  const cardWidth = cards[0].offsetWidth + 20; // Width + gap
+  const visibleCards = Math.floor(carousel.offsetWidth / cardWidth);
+  const maxIndex = Math.max(0, cards.length - visibleCards);
+  
+  // Update dots
+  function updateDots() {
+      dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === Math.min(currentIndex, dots.length - 1));
+      });
+  }
+  
+  // Move carousel
+  function moveCarousel() {
+      const offset = -currentIndex * cardWidth;
+      carousel.style.transform = `translateX(${offset}px)`;
+      updateDots();
+  }
+  
+  // Event listeners for buttons
+  prevButton.addEventListener('click', function() {
+      if (currentIndex > 0) {
+          currentIndex--;
+          moveCarousel();
+      }
+  });
+  
+  nextButton.addEventListener('click', function() {
+      if (currentIndex < maxIndex) {
+          currentIndex++;
+          moveCarousel();
+      }
+  });
+  
+  // Event listeners for dots
+  dots.forEach((dot) => {
+      dot.addEventListener('click', function() {
+          currentIndex = parseInt(this.getAttribute('data-index'));
+          if (currentIndex > maxIndex) currentIndex = maxIndex;
+          moveCarousel();
+      });
+  });
+  
+  // Handle window resize
+  window.addEventListener('resize', function() {
+      const newVisibleCards = Math.floor(carousel.offsetWidth / cardWidth);
+      const newMaxIndex = Math.max(0, cards.length - newVisibleCards);
+      
+      if (currentIndex > newMaxIndex) {
+          currentIndex = newMaxIndex;
+          moveCarousel();
+      }
+  });
+});
