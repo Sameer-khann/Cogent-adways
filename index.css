@@ -767,25 +767,35 @@ header {
 /* Unique Needs of Industrial Design Section Styles */
 
 .UNS{
+  width: 100%;
   background-image: url(assets/uniqueedsBG.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.uni-needs-section {
+.UNS2{
   background: linear-gradient(to bottom, #051642, #092b67);
   opacity: 85%;
+  padding: 2rem 2rem 18rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.uni-needs-section {
+  
   color: #ffffff;
-  padding: 40px 0px 0px;
+  /* padding: 40px 0px 0px; */
   font-family: Arial, sans-serif;
   position: relative;
   overflow: hidden;
 }
 
 .uni-needs-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1200px; */
+  margin: 0;
   position: relative;
 }
 
@@ -796,6 +806,25 @@ header {
   font-size: 3.2rem;
   margin: 0;
   font-weight: 400;
+  /* padding-top: 2rem; */
+  /* position: relative; */
+}
+
+.uni-needs-title::after{
+  content: '';
+  display: block;
+  width: 110px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #FF5722;
+}
+
+.uni-sec-head{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: start;
+  /* width: 48.59%; */
 }
 
 .uni-needs-highlight {
@@ -803,11 +832,14 @@ header {
 }
 
 .uni-needs-underline {
+  /* display: flex;
+  align-items: center;
+  justify-content: start; */
   width: 90px;
   height: 5px;
   background-color: rgba(239, 89, 35, 1);
   border-radius: 5px;
-  margin: 0 auto 40px;
+  margin: 0 0 40px;
 }
 
 /* Points Section */
@@ -880,7 +912,11 @@ header {
 /* Carousel Section */
 .uni-needs-carousel-container {
   margin-bottom: 40px;
-  position: relative;
+  position: absolute;
+  /* top: 71%; */
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: auto;
 }
 
@@ -991,14 +1027,14 @@ header {
 .uni2 {
   background-color: #d84520;
   /* width: 100%; */
-  padding: 5rem 2rem;
+  padding: 10rem 2rem 5rem 2rem;
 }
 
 .uni-needs-quote {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-align: center;
-  font-size: 3rem;
+  font-size: 40px;
   /* font-style: italic; */
   /* margin-top: 40px; */
   color: #fff;
@@ -1094,14 +1130,19 @@ header {
 
 /* Testimonial Slider */
 .client-test-slider {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* position: relative; */
+  padding: 0 4rem;
   margin-bottom: 30px;
 }
 
 /* Navigation Arrows */
 .client-test-nav {
-  position: absolute;
-  top: 50%;
+  /* position: absolute;
+  top: 50%; */
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
@@ -1122,20 +1163,20 @@ header {
   background-color: #ff5722;
 } */
 
-.client-test-prev {
+/* .client-test-prev {
   left: -50px;
 }
 
 .client-test-next {
   right: -50px;
-}
+} */
 
 /* Testimonial Card */
 .client-test-card {
 
   background-color: #15192a;
   border-radius: 30px;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   border: 2px solid rgba(104, 143, 181, 1);
 }
@@ -1147,31 +1188,41 @@ header {
   justify-content: space-between;
   padding: 0;
   position: relative;
+  z-index: 1;
 }
 
 /* Client Image */
 .client-test-img-container {
-  /* position: absolute; */
-  /* top: -50px; */
-  /* left: 10%; */
+  position: absolute;
+  /* top: -50%; */
+  bottom: 80%;
+  left: 10%;
   /* transform: translateX(-50%); */
   width: 100px;
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid #15192a;
+  /* border: 4px solid #15192a; */
   margin: 1rem;
-  /* z-index: 5000; */
+  
 }
 
 .clientsay {
+  position: relative;
   flex: 1;
+  z-index: 5;
 }
 
 .client-test-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* z-index: 5000; */
+  /* transform: translateX(90%), translateY(50%); */
+  width: 180%;
+  height: 180%;
+  object-fit: contain;
+  object-position: -70% 10%;
 }
 
 .client-test-card-inner {
@@ -1187,13 +1238,14 @@ header {
 
 .client-test-quote {
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 1.6;
+  font-weight: 300;
+  font-size: 1rem;
+  /* line-height: 1.6; */
   /* margin-bottom: 20px; */
   margin: 0;
   color: #e0e0e0;
   text-align: justify;
+  padding-top: 5rem;
 }
 
 .client-test-author {
@@ -1219,7 +1271,7 @@ header {
 /* Video Column */
 .client-test-video-col {
   /* flex: 1; */
-  padding: 20px 30px 30px 0;
+  padding: 30px 30px 30px 0;
   flex: 1;
 }
 
@@ -1401,9 +1453,9 @@ header {
   border-radius: 5px;
   background-color: #FF5722;
   position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: -3px;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
 }
 
 .cogent-qa-intro {
