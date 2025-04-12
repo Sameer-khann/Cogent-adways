@@ -38,7 +38,8 @@ body {
 }
 
 .Home {
-  background-image: linear-gradient(rgba(1, 1, 14, 0.6), rgba(4, 4, 21, 0.6)), url(assets/video.mp4);
+  background-image: linear-gradient(#06131b99, #06131b99), url(assets/video.mp4);
+  /* background-image: linear-gradient(rgba(1, 1, 14, 0.6), rgba(4, 4, 21, 0.6)), url(assets/video.mp4); */
   /* background-image: linear-gradient(rgba(228, 28, 28, 0.542), rgba(0, 0, 0, 0.605)), url(assets/video.mp4); */
 }
 
@@ -115,6 +116,7 @@ header {
 
 .nav-links a:hover {
   color: rgba(239, 89, 35, 1);
+  /* color: #06131B; */
 }
 
 .nav-links a::after {
