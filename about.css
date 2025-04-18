@@ -455,9 +455,9 @@ p {
     margin-bottom: 10px;
     font-family: Oswald;
     font-weight: 600;
-    font-size: 80px;
-    line-height: 97px;
-    letter-spacing: -2%;
+    font-size: 5rem;
+    /* line-height: 97px;
+    letter-spacing: -2%; */
     text-align: right;
 }
 
@@ -557,6 +557,12 @@ p {
     margin-left: 30px;
 }
 
+@media (max-width: 1200px) {
+    .right-title {
+        font-size: 3rem;
+    }
+}
+
 /* Media Queries */
 @media (max-width: 992px) {
 
@@ -579,8 +585,9 @@ p {
         margin-bottom: 30px;
     }
 
-    .section-title,
-    .right-title {
+
+
+    .section-title {
         font-size: 32px;
     }
 }
@@ -653,12 +660,13 @@ p {
     margin: 0;
     position: relative;
     display: inline-block;
+    padding: 0 0 5px 0;
 }
 
 .cogent-qa-heading::after {
     content: '';
     display: block;
-    width: 110px;
+    width: 100px;
     height: 5px;
     border-radius: 5px;
     background-color: #FF5722;
@@ -683,7 +691,7 @@ p {
     font-size: 1.2rem;
     line-height: 1.5;
     font-weight: 600;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 0.3rem 0;
     margin: 0;
 }
 
@@ -809,10 +817,12 @@ p {
 
 .prev-button {
     left: 10px;
+    top: 11rem;
 }
 
 .next-button {
     right: 10px;
+    top: 11rem;
 }
 
 .client-test-view-more {
@@ -830,7 +840,7 @@ p {
     margin-bottom: 30px;
 }
 
-.cogent-connect-bottom{
+.cogent-connect-bottom {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -839,15 +849,15 @@ p {
     background-color: rgba(0, 23, 51, 75);
 }
 
-.Lets-connect{
+.Lets-connect {
     font-family: Oswald;
     font-weight: 600;
     font-size: 36px;
     color: #EF5923;
-    
+
 }
 
-.mobile-number{
+.mobile-number {
     font-family: Open Sans;
     font-weight: 600;
     font-size: 24px;
