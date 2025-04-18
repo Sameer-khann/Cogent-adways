@@ -640,7 +640,7 @@ p {
     /* max-width: 1200px; */
     /* margin: 0 auto; */
     padding: 4rem 10rem;
-    background: linear-gradient(to top, rgba(2, 2, 3, 1), rgba(34, 36, 43, 1));
+    background: #070A10;
     color: #E6E3E3;
     text-align: center;
 }
@@ -677,21 +677,31 @@ p {
     padding: 1rem 0 3rem 0;
 }
 
-.cogent-about-head{
+.cogent-qa-intro2 {
+    font-family: "Open Sans", sans-serif;
+    /* margin-bottom: 30px; */
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    padding: 1rem 0 1rem 0;
+    margin: 0;
+}
+
+.cogent-about-head {
     color: #ef5923;
     font-family: Oswald;
     font-weight: 600;
     font-size: 2.2rem;
 }
 
-.cogent-about-head span{
-    color : #E6E3E3;
+.cogent-about-head span {
+    color: #E6E3E3;
 }
 
-.cogent-subhead{
+.cogent-subhead {
     font-family: Open Sans;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .cogent-qa-intro-watch {
@@ -708,7 +718,7 @@ p {
 
 .carousel-container {
     position: relative;
-    max-width: 1200px;
+    max-width: 46.5rem;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -716,19 +726,20 @@ p {
 .cogent-qa-videos {
     display: flex;
     transition: transform 0.5s ease;
-    gap: 20px;
+    gap: 0px;
     padding: 2rem 40px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .cogent-qa-video-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 14rem;
     flex-shrink: 0;
     position: relative;
     text-align: center;
+    padding: 0 2rem;
 }
 
 .cogent-qa-question {
@@ -740,8 +751,8 @@ p {
 
 .cogent-qa-video-thumbnail {
     position: relative;
-    width: 60%;
-    height: 70%;
+    width: 100%;
+    height: auto;
 }
 
 .cogent-qa-video-image {
@@ -804,24 +815,44 @@ p {
     right: 10px;
 }
 
-.carousel-dots {
+.client-test-view-more {
+    font-family: "Oswald", sans-serif;
+    display: inline-block;
+    background-color: #070A10;
+    border: 2px solid rgba(255, 87, 34, 1);
+    color: #E6E3E3;
+    text-decoration: none;
+    padding: 0px 30px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.cogent-connect-bottom{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    gap: 20px;
+    border: 2px solid #42556C;
+    border-radius: 30px;
+    background-color: rgba(0, 23, 51, 75);
 }
 
-.dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
+.Lets-connect{
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 36px;
+    color: #EF5923;
+    
 }
 
-.dot.active {
-    background-color: #FF5722;
+.mobile-number{
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 24px;
+    color: #EF5923;
+    padding: 10px 0;
 }
 
 .cogent-qa-caption {
