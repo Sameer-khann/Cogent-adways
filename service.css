@@ -15,70 +15,8 @@ body {
     }
 }
 
-/* header {
-    background-color: var(--secondary-color);
-    padding: 1rem 0;
-    position: static;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.5) url(assets/navBG.jpeg);
-    background-blend-mode: overlay;
-}
 
-.nav1div{
-    font-weight: 550;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    /* max-width: 1200px; */
-/* margin: 0 auto; */
-/* padding: 1rem 5rem 1rem 10rem;
-}
-
-.logo img {
-    height: 4em;
-}
-
-.nav-links {
-    color: white;
-    display: flex; */
-/* justify-content: space-between; */
-/* align-items: center;
-    gap: 2em;
-}
-
-.nav-links :hover {
-    color: rgba(239, 89, 35, 1);
-}
-
-.nav-links a {
-    color: var(--text-color);
-    text-decoration: none; */
-/* margin-left: 2rem; */
-/* transition: color 0.3s ease;
-}
-
-.logo {
-    display: flex;
-
-}
-
-.navText1 {
-    color: rgba(239, 89, 35, 1);
-    margin: 0;
-}
-
-.navText2 {
-    color: white;
-    margin: 0;
-}
-
-.navText {
-    display: flex;
-    flex-direction: column;
-} */
+/* Navbar */
 
 header {
     background: rgba(0, 0, 0, 0.5) url(assets/navBG.jpeg);
@@ -120,7 +58,7 @@ header {
 }
 
 .navText2 {
-    color: white;
+    color: #E6E3E3;
     margin: 0;
 }
 
@@ -130,20 +68,50 @@ header {
     gap: 2em;
 }
 
+
+
+/* .navHighlighter{
+    width: 25px;
+    height: 2px;
+    background-color: #d84520;
+  } */
+
 .nav-links a {
-    color: white;
+    color: #E6E3E3;
     text-decoration: none;
     font-weight: 550;
     transition: color 0.3s ease;
+
+    position: relative;
+    padding-bottom: 2px;
+    /* padding: 10px 15px; */
 }
 
 .nav-links a:hover {
     color: rgba(239, 89, 35, 1);
+    /* color: #06131B; */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 25%;
+    background-color: #d84520;
+    transition: width 0.3s ease;
+    /* margin-top: 10px; */
+}
+
+.nav-links a:hover::after {
+    width: 50%;
+    /* Expands the underline on hover */
 }
 
 .inquiry-btn {
     background-color: rgba(239, 89, 35, 1);
-    color: white;
+    color: #E6E3E3;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -160,7 +128,7 @@ header {
     display: none;
     background: none;
     border: none;
-    color: white;
+    color: #E6E3E3;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -529,6 +497,72 @@ header {
         padding: 0.3rem 1rem;
         border-width: 1.5px;
     }
+}
+
+/* Quote */
+
+.mkt_banner_wrapper * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main banner container */
+.mkt_banner_wrapper {
+    /* width: 100%; */
+    background-color: #000000;
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* Banner content container */
+.mkt_banner_content {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Banner text styling */
+.mkt_banner_text {
+    color: #ffffff;
+    /* font-size: 24px; */
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Highlight text in orange */
+.mkt_banner_highlight {
+    color: #ff4500;
+    /* font-weight: 700; */
+}
+
+/* Animation for text highlight */
+@keyframes mkt_highlight_pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+/* Responsive adjustments */
+/* @media screen and (max-width: 768px) {
+    .mkt_banner_text {
+        font-size: 20px;
+    }
+} */
+
+@media screen and (max-width: 480px) {
+    .mkt_banner_wrapper {
+        padding: 20px 10px;
+    }
+    
+    /* .mkt_banner_text {
+        font-size: 16px;
+    } */
 }
 
 /* Footer  */
