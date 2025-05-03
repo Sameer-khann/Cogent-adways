@@ -187,6 +187,7 @@ header {
     }
 }
 
+/* Section Starts */
 
 a {
     text-decoration: none;
@@ -408,7 +409,7 @@ a {
 
 
 
-/* Footer Styles */
+/* Footer Starts */
 .main-footer {
     /* background-color: #0a1624; */
     background: linear-gradient(to top, rgba(12, 16, 28, 1)50%, rgba(26, 43, 64, 1)100%);
