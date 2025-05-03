@@ -207,3 +207,56 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
+
+// Portfolio Page
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all tab buttons and portfolio cards
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const portfolioCards = document.querySelectorAll('.portfolio-card');
+  
+  // Add click event to all tab buttons
+  tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          button.classList.add('active');
+          
+          // Get selected category
+          const selectedCategory = button.getAttribute('data-category');
+          
+          // Filter the cards
+          filterCards(selectedCategory);
+      });
+  });
+  
+  // Function to filter cards based on category
+  function filterCards(category) {
+      portfolioCards.forEach(card => {
+          // Show all cards if 'all' category is selected
+          if (category === 'all') {
+              card.classList.remove('hidden');
+          } else {
+              // Show cards that match the selected category and hide others
+              if (card.getAttribute('data-category') === category) {
+                  card.classList.remove('hidden');
+              } else {
+                  card.classList.add('hidden');
+              }
+          }
+      });
+  }
+  
+  // Trigger click on 'All' button to initialize the view
+  document.querySelector('[data-category="all"]').click();
+
+  // Optional: Add animation effects when cards are first loaded
+  portfolioCards.forEach((card, index) => {
+      // Add staggered animation effect
+      setTimeout(() => {
+          card.style.opacity = '1';
+      }, 100 * index);
+  });
+});
