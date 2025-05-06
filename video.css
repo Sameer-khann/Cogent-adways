@@ -178,15 +178,6 @@ header {
 }
 
 @media screen and (max-width: 480px) {
-
-    .cataCard{
-        padding: 0 1rem;
-    }
-
-    .ips-container {
-        padding: 2rem 1rem;
-    }
-
     .logo img {
         height: 3em;
     }
@@ -199,36 +190,6 @@ header {
         width: 80%;
     }
 }
-
-.pcs-image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.pcs-grid-img {
-    flex: 1;
-    min-width: 30%;
-    height: 200px;
-    object-fit: cover;
-}
-
-
-@media (max-width: 768px){
-    .pcs-grid-img {
-        min-width: 100%;
-        margin-bottom: 0.5rem;
-    }
-
-    .pcs-right-content {
-        padding: 0 0 0 0rem;
-    }
-
-    .pcs-section-title{
-        text-align: center;
-    }
-}
-
 
 /* Main content 1st Section  */
 
@@ -257,7 +218,7 @@ header {
     font-size: 1.3rem;
     text-align: center;
     color: #ff6b35;
-    margin: 0.5rem 8rem 1.5rem;
+    margin: 0.5rem 0 1.5rem;
 }
 
 .pcs-section-title {
@@ -323,7 +284,7 @@ header {
     font-weight: 400;
     font-size: 1.1rem;
     text-align: justify;
-    margin: 0.5rem 0 1.5rem 0;
+    margin-bottom: 1rem;
 }
 
 .pcs-strategic-text {
@@ -438,10 +399,9 @@ header {
 }
 
 .pcs-right-content {
-    flex: 1.5;
+    flex: 2;
     min-width: 300px;
-    padding: 0 0 0 2rem;
-    text-align: justify;
+    padding: 0 0 0 5rem;
 }
 
 
@@ -459,10 +419,11 @@ header {
     color: #ffffff;
     border: 2px solid #ff6b35;
     border-radius: 30px;
-    padding: 0.3rem 1.5rem;
+    padding: 0.3rem 2rem;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 0 0.8rem;
     /* position: relative;
     left: 5%;
     top: 20%; */
@@ -471,6 +432,28 @@ header {
 
 .pcs-view-btn2:hover {
     background-color: rgba(255, 107, 53, 0.1);
+}
+
+
+.pcs-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pcs-grid-img {
+    flex: 1;
+    min-width: 30%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px){
+    .pcs-grid-img {
+        min-width: 100%;
+        margin-bottom: 0.5rem;
+    }
 }
 
 
@@ -508,17 +491,50 @@ header {
     display: inline;
 }
 
+.ips-industries-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    /* margin-bottom: 1rem; */
+    margin: 0;
+}
+
+.ips-industries-list {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 0 7rem;
+}
+
+.ips-cta-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 2rem;
+}
+
+.ips-discuss-text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+/* Layout Components */
 .ips-offer-section,
 .ips-get-section {
     padding: 2rem 2rem 1rem;
 }
 
-.ips-plus-icon {
-    color: #ff6b35;
-    margin-right: 0.8rem;
-    font-size: 1.8rem;
-    line-height: 1;
-}
+/* .ips-service-list {
+    margin-left: 0.5rem;
+} */
 
 .ips-service-item {
     display: flex;
@@ -531,6 +547,11 @@ header {
     flex-shrink: 0;
 }
 
+.ips-service-content {
+    font-family: "Open Sans", sans-serif;
+    flex-grow: 1;
+}
+
 .ips-industries-section {
     /* background-color: #091e42; */
     background: 
@@ -540,23 +561,74 @@ header {
     position: relative;
 }
 
-.ips-industries-title {
-    font-family: "Oswald", sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    text-align: center;
-    /* margin-bottom: 1rem; */
-    margin: 0;
+/* Add pattern overlay to industries section */
+.ips-industries-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.08;
+    /* background-image: radial-gradient(#ffffff 1px, transparent 1px); */
+    background: 
+        linear-gradient( to top, rgba(2, 32, 67, 0.9)100%, rgba(12, 15, 22, 0.8)),
+        url(assets/sec2bg.png);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.ips-cta-section {
+    /* background-color: #400a0a; */
+    background: 
+        linear-gradient( to top, rgba(67, 1, 1, 0.888)100%, rgba(12, 15, 22, 0.8)),
+        url(assets/sec2bg.png);
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+/* Add pattern overlay to CTA section */
+.ips-cta-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    background-image: radial-gradient(#ffffff 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.ips-buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Icons */
+.ips-plus-icon {
+    color: #ff6b35;
+    margin-right: 0.8rem;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.ips-circle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #38516a;
+    color: #ffffff;
+    font-size: 0.7rem;
 }
 
 /* Buttons */
-
-.btn2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
-}   
 
 .pcs-view-btn2 {
     font-family: Open Sans;
@@ -574,6 +646,85 @@ header {
 .pcs-view-btn2:hover {
     background-color: rgba(255, 107, 53, 0.1);
 }
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    .pcs-right-content {
+        padding: 0 0 0 0rem;
+    }
+
+    .pcs-section-title{
+        text-align: center;
+    }
+
+    .ips-section-title {
+        font-size: 1.8rem;
+    }
+    
+    .ips-cta-title {
+        font-size: 2rem;
+    }
+    
+    .ips-discuss-text {
+        font-size: 1.3rem;
+    }
+    
+    .ips-service-name,
+    .ips-service-desc {
+        font-size: 1rem;
+    }
+    
+    .ips-offer-section,
+    .ips-get-section {
+        padding: 1.5rem 1.5rem 0.5rem;
+    }
+    
+    .ips-industries-section,
+    .ips-cta-section {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .cataCard{
+        padding: 0 1rem;
+    }
+
+    .ips-container {
+        padding: 2rem 1rem;
+    }
+
+    .ips-section-title {
+        font-size: 1.5rem;
+    }
+    
+    .ips-cta-title {
+        font-size: 1.8rem;
+    }
+    
+    .ips-discuss-text {
+        font-size: 1.2rem;
+    }
+    
+    .ips-service-name,
+    .ips-service-desc {
+        font-size: 0.95rem;
+    }
+    
+    .ips-buttons-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .ips-book-btn,
+    .ips-portfolio-btn {
+        width: 100%;
+    }
+}
+
 
 
 
