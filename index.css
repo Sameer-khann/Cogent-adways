@@ -355,6 +355,10 @@ header {
     font-size: 1.7rem;
   }
 
+  .content {
+    padding: 3rem;
+  }
+
   .subtitle {
     font-size: 1.8rem;
   }

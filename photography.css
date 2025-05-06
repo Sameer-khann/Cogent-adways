@@ -1,7 +1,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: rgba(7, 10, 16, 1);
-    color: var(--text-color);
+    color: #E6E3E3;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -191,10 +191,8 @@ header {
     }
 }
 
+/* Main content 1st Section  */
 
-
-
-/* Main Content Starts */
 .pcs-main-container {
     font-family: 'Arial', sans-serif;
     color: #E6E3E3;
@@ -348,7 +346,7 @@ header {
     position: relative;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.3rem; 
     /* text-transform: uppercase; */
     letter-spacing: 1px;
     padding-bottom: 0.5rem;
@@ -373,6 +371,14 @@ header {
     margin: 0 auto;
 }
 
+.pcs-divider2 {
+    border: 0;
+    height: 1px;
+    background-color: transparent;
+    width: 100%;
+    margin: 0;
+}
+
 .pcs-why-matters-section {
     /* background-color: #1c1c1c; */
     padding: 0rem 2rem 2rem 2rem;
@@ -380,10 +386,11 @@ header {
 
 .pcs-section-content {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
 .pcs-left-content {
@@ -397,221 +404,230 @@ header {
     padding: 0 0 0 5rem;
 }
 
-.pcs-offer-section {
-    padding: 4rem 10rem;
-}
 
-.pcs-service-item {
-    max-width: 1200px;
-    margin: 0 auto 3rem;
-}
-
-.pcs-service-content {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
-}
-
-.pcs-service-info {
-    flex: 1;
-    min-width: 300px;
-}
-
-.pcs-service-image {
-    flex: 1;
-    /* min-width: 300px; */
-}
-
-.pcs-service-image img {
-    width: 100%;
-    height: auto;
-    /* border-radius: 8px; */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.pcs-reverse {
-    flex-direction: row-reverse;
-}
-
-.pcs-feature-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.pcs-feature-list li {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    margin-bottom: 0.8rem;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: flex-start;
-}
-
-.pcs-icon-bullet {
-    color: #ff6b35;
-    font-size: 0.5rem;
-    margin-right: 0.8rem;
-    margin-top: 0.6rem;
-}
-
-.pcs-portfolio-btn-container {
-    text-align: start;
-    margin-top: 2rem;
-}
-
-.pcs-specialization-section {
-    /* background-color: #0d213d; */
-    padding: 4rem 10rem;
-    background: 
-        linear-gradient( to top, rgba(2, 32, 67, 0.9)100%, rgba(12, 15, 22, 0.8)),
-        url(assets/sec2bg.png);
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
-}
-
-.pcs-specialization-icon {
-    color: #ff6b35;
-    margin-right: 0.5rem;
-}
-
-.pcs-specialization-text {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    /* max-width: 900px; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    text-align: justify;
-
-}
-
-.pcs-edge-title {
-    color: #ff6b35;
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    margin: 2rem 0 1rem;
-}
-
-.pcs-edge-list {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-    list-style-type: none;
-    padding: 0;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem; */
-}
-
-.pcs-edge-list li {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 0.8rem;
-}
-
-.pcs-check-icon {
-    color: #ff6b35;
-    margin-right: 0.8rem;
-}
-
-.pcs-solution-section {
-    padding: 4rem 10rem;
-}
-
-.pcs-solution-content {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-evenly;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 2rem;
-}
-
-.pcs-solution-left {
-    /* flex: 1; */
-    min-width: 300px;
-}
-
-.pcs-solution-right {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-    /* flex: 1; */
-    min-width: 300px;
-}
-
-.pcs-one-stop {
-    color: #ff6b35;
-    font-size: 1.5rem;
-}
-
-.pcs-solution-tagline {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 1.3rem;
-    margin-top: 4rem;
-}
-
-.pcs-solution-list {
-    list-style-type: none;
-    padding: 2rem 0 0 0 ;
-}
-
-.pcs-solution-list li {
-    margin-bottom: 0.8rem;
-    display: flex;
-    align-items: flex-start;
-}
-
-.pcs-cta-section {
-    /* background-color: #1e0707; */
-    background: 
-        linear-gradient( to top, rgba(67, 1, 1, 0.888)100%, rgba(12, 15, 22, 0.8)),
-        url(assets/sec2bg.png);
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-.pcs-cta-text {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    /* max-width: 800px; */
-    /* margin: 0 auto; */
-}
-
-.pcs-cta-buttons {
+.btn2{
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1rem;
 }
 
-/* Buttons */
-.pcs-view-btn {
+.pcs-view-btn2 {
     font-family: Open Sans;
     font-weight: 700;
     background-color: #000a1a;
     color: #ffffff;
     border: 2px solid #ff6b35;
     border-radius: 30px;
-    padding: 0.3rem 1.5rem;
+    padding: 0.3rem 2rem;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 0 0.8rem;
     /* position: relative;
     left: 5%;
     top: 20%; */
+    /* text-align: center; */
 }
 
-.pcs-view-btn:hover {
+.pcs-view-btn2:hover {
     background-color: rgba(255, 107, 53, 0.1);
 }
+
+
+.pcs-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pcs-grid-img {
+    flex: 1;
+    min-width: 30%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px){
+    .pcs-grid-img {
+        min-width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+.ips-container {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #E6E3E3;
+    padding: 2rem 7rem;
+    /* background-color: #0c1016; */
+}
+
+/* Typography */
+.ips-section-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.ips-service-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    display: inline;
+}
+
+.ips-service-desc {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+    display: inline;
+}
+
+.ips-industries-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    /* margin-bottom: 1rem; */
+    margin: 0;
+}
+
+.ips-industries-list {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    /* max-width: 800px; */
+    margin: 0 auto;
+}
+
+.ips-cta-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 2rem;
+}
+
+.ips-discuss-text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+/* Layout Components */
+.ips-offer-section,
+.ips-get-section {
+    padding: 2rem 2rem 1rem;
+}
+
+/* .ips-service-list {
+    margin-left: 0.5rem;
+} */
+
+.ips-service-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.2rem;
+}
+
+.ips-icon-wrapper {
+    margin-right: 0.8rem;
+    flex-shrink: 0;
+}
+
+.ips-service-content {
+    font-family: "Open Sans", sans-serif;
+    flex-grow: 1;
+}
+
+.ips-industries-section {
+    /* background-color: #091e42; */
+    background: 
+        linear-gradient( to top, rgba(2, 32, 67, 0.9)100%, rgba(12, 15, 22, 0.8)),
+        url(assets/sec2bg.png);
+    padding: 2.5rem 2rem;
+    position: relative;
+}
+
+/* Add pattern overlay to industries section */
+.ips-industries-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.08;
+    /* background-image: radial-gradient(#ffffff 1px, transparent 1px); */
+    background: 
+        linear-gradient( to top, rgba(2, 32, 67, 0.9)100%, rgba(12, 15, 22, 0.8)),
+        url(assets/sec2bg.png);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.ips-cta-section {
+    /* background-color: #400a0a; */
+    background: 
+        linear-gradient( to top, rgba(67, 1, 1, 0.888)100%, rgba(12, 15, 22, 0.8)),
+        url(assets/sec2bg.png);
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+/* Add pattern overlay to CTA section */
+.ips-cta-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    background-image: radial-gradient(#ffffff 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.ips-buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Icons */
+.ips-plus-icon {
+    color: #ff6b35;
+    margin-right: 0.8rem;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.ips-circle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #38516a;
+    color: #ffffff;
+    font-size: 0.7rem;
+}
+
+/* Buttons */
 
 .pcs-view-btn2 {
     font-family: Open Sans;
@@ -624,89 +640,15 @@ header {
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    /* position: relative;
-    left: 5%;
-    top: 20%; */
 }
 
 .pcs-view-btn2:hover {
     background-color: rgba(255, 107, 53, 0.1);
 }
 
-.pcs-quote-btn {
-    background-color: #ff6b35;
-    color: #ffffff;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.pcs-quote-btn:hover {
-    background-color: #e55a29;
-}
-
-
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-
-    .cataCard{
-        padding: 0 3rem;
-    }
-
-    .pcs-offer-section {
-        padding: 4rem 3rem;
-    }
-
-    .pcs-specialization-section {
-        padding: 4rem 3rem;
-    }
-
-    .pcs-solution-section {
-        padding: 4rem 3rem;
-    }
-
-    .pcs-main-title {
-        font-size: 2rem;
-    }
-
-    .pcs-right-content {
-        padding: 0 0 0 0rem;
-    }
-
-    .pcs-section-title{
-        text-align: center;
-    }
-    
-    .pcs-section-title,
-    .pcs-offer-title, 
-    .pcs-specialization-title, 
-    .pcs-solution-title,
-    .pcs-cta-title {
-        font-size: 1.8rem;
-    }
-    
-    .pcs-service-content {
-        flex-direction: column;
-    }
-    
-    .pcs-reverse {
-        flex-direction: column;
-    }
-    
-    .pcs-edge-list {
-        grid-template-columns: 1fr;
-    }
-    
-    .pcs-grid-img {
-        min-width: 100%;
-        margin-bottom: 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
 
     .cataCard{
         padding: 0 1rem;
@@ -716,29 +658,68 @@ header {
         padding: 2rem 1rem;
     }
 
-    .pcs-main-title {
-        font-size: 1.8rem;
+    .pcs-right-content {
+        padding: 0 0 0 0rem;
     }
 
-    .pcs-solution-content{
-        flex-direction: column;
+    .pcs-section-title{
+        text-align: center;
+    }
+
+    .ips-section-title {
+        font-size: 1.8rem;
     }
     
-    .pcs-section-title,
-    .pcs-offer-title, 
-    .pcs-specialization-title, 
-    .pcs-solution-title,
-    .pcs-cta-title {
+    .ips-cta-title {
+        font-size: 2rem;
+    }
+    
+    .ips-discuss-text {
+        font-size: 1.3rem;
+    }
+    
+    .ips-service-name,
+    .ips-service-desc {
+        font-size: 1rem;
+    }
+    
+    .ips-offer-section,
+    .ips-get-section {
+        padding: 1.5rem 1.5rem 0.5rem;
+    }
+    
+    .ips-industries-section,
+    .ips-cta-section {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ips-section-title {
         font-size: 1.5rem;
     }
     
-    .pcs-header-section,
-    .pcs-why-matters-section,
-    .pcs-offer-section,
-    .pcs-specialization-section,
-    .pcs-solution-section,
-    .pcs-cta-section {
-        padding: 2rem 1rem;
+    .ips-cta-title {
+        font-size: 1.8rem;
+    }
+    
+    .ips-discuss-text {
+        font-size: 1.2rem;
+    }
+    
+    .ips-service-name,
+    .ips-service-desc {
+        font-size: 0.95rem;
+    }
+    
+    .ips-buttons-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .ips-book-btn,
+    .ips-portfolio-btn {
+        width: 100%;
     }
 }
 

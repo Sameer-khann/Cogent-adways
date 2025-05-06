@@ -207,8 +207,10 @@ header {
 
 /* Header styles */
 .ind-hero-section {
-    background-color: rgba(78, 9, 9, 1);
-    padding: 40px 0;
+    /* background-color: rgba(78, 9, 9, 1); */
+    background: linear-gradient(to top, rgba(78, 9, 9, 1)50%, rgb(49, 12, 15,1)100%);
+
+    padding: 40px 3rem;
     text-align: center;
 }
 
@@ -438,13 +440,17 @@ header {
 
     .ind-testimonial-card {
         max-width: 500px;
-        margin: 0 auto;
     }
 }
 
 @media (max-width: 576px) {
+
+    .ind-testimonials-section {
+        padding: 2rem 3rem;
+    }
+    
     .ind-hero-section {
-        padding: 30px 0;
+        padding: 30px 3rem;
     }
 
     .ind-main-title {
